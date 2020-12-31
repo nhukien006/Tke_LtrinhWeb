@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Habit Reminder</title>
+    <meta content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="time.js"></script>
+
+</head>
+
+
+<body>
+    <!-- ---------------------Nhập thói quen------------------------ -->
+    <header>
+        <div class="header">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+                <li><a href="#" target="_blank">Help</a></li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h1>Habit <span class="title">Reminder</span></h1>
+            <div class="inputDiv">
+                <input type="text" class="input" placeholder="Enter your habit here....">
+                <button class="add">ADD</button>
+            </div>
+        </div>     
+    </header>
+    <!-- ----------------------------------------------------------- -->
+
+
+
+
+    <!-- ---------------------Đếm hẹn giờ------------------------ -->
+    <div class="timeRe">
+        <div>
+            <p>Enter the time to notify:</p>
+            <input class="time" type="number" id="hourVal" placeholder="Hour" value="" />
+            <input class="time" type="number" id="minuteVal" placeholder="Minute" value="" />
+            <input class="time" type="number" id="secondVal" placeholder="Second" value="" />
+        </div>
+
+        <div>
+            <input class="timeBut" type="button" value="Start" onclick="start()" />
+            <input class="timeBut" type="button" value="Stop" onclick="stop()" />
+        </div>
+    </div>
+
+
+
+    <div class="out">
+        <!-- ---------------------Xuất danh sách------------------------ -->
+
+        <div class="container">
+            <p><u>Your Habit</u>:</p>
+        </div>
+
+
+        <!-- ---------------------Xuất giờ------------------------ -->
+        <div class="timeOut">
+            <p><u>Completion time</u>:</p>
+            <span id="h">Hour</span> <p class="type"> :</p>
+            <span id="m">Minute</span> <p class="type"> :</p>
+            <span id="s">Second</span>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------- -->
+    <script src='list.js'></script>
+</body>
+
+</html>

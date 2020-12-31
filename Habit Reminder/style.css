@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	height: 100%;
+	background-image: linear-gradient(45deg, rgba(207, 177, 57, 0.974), rgba(226, 109, 144, 0.974) 70%, rgba(69, 206, 119, 0.974) 90%), url(./img_background.png);
+    background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	background-attachment: fixed;
+}
+
+
+/* -- ------------------------------------------------------ -- */
+/* -- --------------------- Header ------------------------ -- */
+
+
+.header{
+	float: right;
+	margin-right: 50px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: 'Courier New', Courier, monospace;
+}
+.header li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+	
+}
+.header li a{
+	text-decoration: none;
+	color: rgb(97, 47, 232);
+	font-size: 21px;
+	font-weight: 700;
+}
+.header li a:hover,
+.header li a:active{
+	color: olive;
+}
+
+
+
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: 50;
+	text-align: center;
+	margin: 20px;
+	margin-left: 300px;
+	font-family: 'Hind', sans-serif;
+	/* font-family: 'Courier New', Courier, monospace; */
+}
+
+.title {
+	color: rgb(97, 47, 232);
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+}
+
+
+.inputDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: rgb(81, 98, 223);
+    color: white;
+	cursor: pointer;
+	margin: 0.25rem;
+	transition: all 0.5s;
+}
+.add:hover,
+.add:active{
+	background-color: brown;
+	color: black;
+	font-weight: 750;
+}
+
+
+/* -- -------------------------------------------------------- -- */
+/* -- ---------------------Đếm hẹn giờ------------------------ -- */
+
+.timeRe{
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.timeBut{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: rgb(81, 98, 223);
+    color: white;
+    cursor: pointer;
+	margin: 5px;
+	transition: all 0.5s;
+}
+.timeBut:hover,
+.timeBut:active{
+	background-color: brown;
+	color: black;
+	font-weight: 750;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+
+.time{
+    height: 25px;
+}
+
+
+p{
+	color: rgb(97, 47, 232);
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 20px;
+	margin-bottom: 8px;
+	/* border-bottom: 2px solid rgb(97, 47, 232); */
+}
+
+p:hover{
+	color: rgb(19, 119, 27);
+}
+
+
+
+/* -- ------------------------------------------------- -- */
+/* -- ---------------------Out------------------------ -- */
+.out{
+	display: flex;
+	justify-content: space-around;
+	width: 1300px;
+}
+
+
+/* -- ------------------------------------------------------ -- */
+/* -- ---------------------Out list------------------------ -- */
+
+
+.container{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: flex-start; */
+	align-items: center;
+	text-align: center;
+	/* margin-top: 27px; */
+	margin: 0 auto;
+}
+
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid white;
+	margin-bottom: 10px;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: rgb(49, 47, 47);
+	font-size: 20px;
+	width: 245px;
+}
+
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color:rgb(49, 47, 47);
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* -- ---------------------Out Time------------------------ -- */
+.timeOut{
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	/* margin-top: 25px; */
+	margin-right: 10vw;
+}
+
+.timeOut p {
+	margin-top: 1px;
+}
+
+.timeOut .type{
+	color: black;
+}
+
+.timeOut span {
+	padding: 1px 5px 0px 5px ;
+	font-size: 15px;
+	height: 25px;
+	border: 3px double black;
+	margin: 0px 2px 0px 2px;
+}
